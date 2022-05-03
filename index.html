@@ -1,183 +1,174 @@
 <!DOCTYPE html>
-<!-- Template by quackit.com -->
-<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>3 Column Layout</title>
-	<style type="text/css">
+<html lang="pt-br">
+	<head>
+		<title>Projeto CPI</title>
+		<meta charset="utf-8" />
+		<meta name="author" content="Gabriel Magalhães" />
+		<meta name="keywords" content="projeto, Gabriel, teste, aula, html5, css" />
+		<meta name="description" content="HTML5 e CSS3 TSI IFB" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
 
-		/* Layout */
-		body {
-			min-width: 630px;
-		}
 
-		#container {
-			padding-left: 200px;
-			padding-right: 190px;
-		}
-		
-		#container .column {
-			position: relative;
-			float: left;
-		}
-		
-		#center {
-			padding: 10px 20px;
-			width: 100%;
-		}
-		
-		#left {
-			width: 180px;
-			padding: 0 10px;
-			right: 240px;
-			margin-left: -100%;
-		}
-		
-		#right {
-			width: 130px;
-			padding: 0 10px;
-			margin-right: -100%;
-		}
-		
-		#footer {
-			clear: both;
-		}
-		
-		/* IE hack */
-		* html #left {
-			left: 150px;
-		}
-
-		/* Make the columns the same height as each other */
-		#container {
-			overflow: hidden;
-		}
-
-		#container .column {
-			padding-bottom: 1001em;
-			margin-bottom: -1000em;
-		}
-
-		/* Fix for the footer */
-		* html body {
-			overflow: hidden;
-		}
-		
-		* html #footer-wrapper {
-			float: left;
-			position: relative;
-			width: 100%;
-			padding-bottom: 10010px;
-			margin-bottom: -10000px;
-			background: #fff;
-		}
-
-		/* Aesthetics */
-		body {
-			margin: 0;
-			padding: 0;
-			font-family:Sans-serif;
-			line-height: 1.5em;
-		}
-		
-		p {
-			color: #555;
-		}
-
-		nav ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-		}
-		
-		nav ul a {
-			color: darkgreen;
-			text-decoration: none;
-		}
-
-		#header, #footer {
-			font-size: large;
-			padding: 0.3em;
-			background: #BCCE98;
-		}
-
-		#left {
-			background: #DAE9BC;
-		}
-		
-		#right {
-			background: #F7FDEB;
-		}
-
-		#center {
-			background: #fff;
-		}
-
-		#container .column {
-			padding-top: 1em;
-		}
-		
-	</style>
+	</head>
 	
-	<script type="text/javascript">
-		/* =============================
-		This script generates sample text for the body content. 
-		You can remove this script and any reference to it. 
-		 ============================= */
-		var bodyText=["The smaller your reality, the more convinced you are that you know everything.", "If the facts don't fit the theory, change the facts.", "The past has no power over the present moment.", "This, too, will pass.", "</p><p>You will not be punished for your anger, you will be punished by your anger.", "Peace comes from within. Do not seek it without.", "<h3>Heading</h3><p>The most important moment of your life is now. The most important person in your life is the one you are with now, and the most important activity in your life is the one you are involved with now."]
-		function generateText(sentenceCount){
-			for (var i=0; i<sentenceCount; i++)
-			document.write(bodyText[Math.floor(Math.random()*7)]+" ")
-		}
-	</script>	
-</head>
+	<body>
 
-<body>
-
-	<header id="header"><p>Header...</p></header>
-
-	<div id="container">
-
-		<main id="center" class="column">
-			<article>
-			
-				<h1>Heading</h1>
-				<p><script>generateText(50)</script></p>
-			
-			</article>								
-		</main>
-
-		<nav id="left" class="column">
-			<h3>Left heading</h3>
-			<ul>
-				<li><a href="#">Link 1</a></li>
-				<li><a href="#">Link 2</a></li>
-				<li><a href="#">Link 3</a></li>
-				<li><a href="#">Link 4</a></li>
-				<li><a href="#">Link 5</a></li>
-			</ul>
-			<h3>Left heading</h3>
-			<ul>
-				<li><a href="#">Link 1</a></li>
-				<li><a href="#">Link 2</a></li>
-				<li><a href="#">Link 3</a></li>
-				<li><a href="#">Link 4</a></li>
-				<li><a href="#">Link 5</a></li>
-			</ul>
-
+		<nav>	
+			<a href="#HOME"> HOME </a>
+			<a href="#SOBRE"> SOBRE </a>
+			<a href="#CARDAPIO"> CARDÁPIO </a>
+			<a href="#ENCOMENDAS"> ENCOMENDAS </a>
 		</nav>
 
-		<div id="right" class="column">
-			<h3>Right heading</h3>
-			<p><script>generateText(1)</script></p>
-		</div>
+		<header>
+			<img src="CPI-CSS/banner.png" alt="banner"/> 
+		</header>
 
-	</div>
+		<article>
+			<section id="SOBRE">
+				<br/><br/><br/><br/><br/>
+				<h1>Requiem Burger</h1>
+				<br/><br/><br/><br/><br/>
+					<h2>Presenteie o seu paladar com esse magnifico sabor!</h2>
+					<h2>Utilizamos ingredientes naturais selecionados para uma 
+						melhor qualidade em nossos produtos;</h2>
+					<h2>Finalizamos nossas carnes no Pitsmoke para maior suculência;</h2>	
+					<h2>Nossos pães artesanais são assados diariamente,</h2>
+					<h2>Saboreie em sua casa, entregamos também em domicílio.</h2>
+					<h2>Venha conhecer!</h2>
+			<br/><br/><br/><br/><br/>		
+			</section>	
+		</article>	
 
-	<div id="footer-wrapper">
-		<footer id="footer"><p>Footer...</p></footer>
-	</div>
+			<section id="CARDAPIO">
+				<br/><br/><br/><br/><br/>
+				<h1>Cardápio</h1>
+				<p>Temos as seguintes opções:</p>
+				<ul>
+					<li>
+						<h3>Gold Experience:</h3>
+							<p>Pão brioche, maionese da casa, 180g do nosso blend de costela angus, cheddar inglês,<br> cebola roxa, pickles e mostarda artesanal.</p>
+					</li>
+					<li>
+						<h3>Star Platinum:</h3>
+							<p>Pão Australiano, molho barbecue artesanal, 180g do nosso blend de costela angus,<br> cheddar inglês, cebola caramelizada e bacon defumado.</p>
+					</li>
+					<li>
+						<h3>Made in Heaven:</h3>
+							<p>Pão brioche, alface americana, pickles, 180g do nosso blend especial de costela Wagyu,<br> duplo cheddar inglês, maionese da casa e bacon defumado.</p>
+					</li>
+					<li>
+						<h3>The World:</h3>
+							<p>Pão brioche, maionese da casa, 2 unidades de 160g do nosso blend especial de costela Wagyu,<br> triplo cheddar inglês, duplo bacon defumado, alface americana, pickles, cebola roxa e mostarda artesanal.</p>
+					</li>
+				</ul>		
+		<br/><br/><br/><br/><br/><br/>
 
-</body>
+				<div id="container">
+					<div class="card">
+						<img src="CPI-CSS/GoldExperience.jpeg" alt="Hamburger" /> 
+						<div class="cardcontent">
+							<p>Gold Experience R$12,99</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="CPI-CSS/StarPlatinum.jpeg" alt="Hamburger" />
+						<div class="cardcontent">
+							<p>Star Platinum R$16,99</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="CPI-CSS/MadeInHeaven.jpeg" alt="Hamburger" />
+						<div class="cardcontent">
+							<p>Made in Heaven R$22,00</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="CPI-CSS/TheWorld.jpeg" alt="Hamburger" />
+						<div class="cardcontent">
+							<p>The World R$29,99</p>
+						</div>
+					</div>
+				</div>	
+
+			<br/><br/><br/><br/><br/>
+			</section>
+			<section id="ENCOMENDAS">
+				<br/><br/><br/><br/><br/>
+				<h1>Encomendas</h1>
+				<p>Faça aqui o seu pedido, enviamos das 17:00 às 23:00</p>
+				<br/><br/><br/>
+					<form name="" method="" action="">
+						<label for="nome">Nome:</label>
+						<input id="nome" type="text" name="nome_completo" placeholder="Nome Completo" required />
+					</form>
+					<br/>
+					<form>
+						<label for="email">Email:</label>
+						<input id="email" type="email" name="email" placeholder="nomeusuario@email.com" required />
+					</form>
+					<br/>
+					<form>
+						<label for="numero">Número Completo:</label>
+						<input id="numero" type="tel" name="numero" placeholder="(99)99999-9999" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$" required />
+					</form>
+					<br/>
+					<form>
+						<label for="produto">Produto:</label>
+						<select id="produto" name="produto">
+							<option>Selecione</option>
+							<option value="GoldExperience">Gold Experience</option>
+							<option value="StarPlatinum">Star Platinum</option>
+							<option value="MadeinHeaven">Made in Heaven</option>
+							<option value="TheWorld">The World</option>
+						</select>
+					</form>
+					<br/>
+					<form>
+						<label for="quantidade">Quantidade:</label>
+						<select id="quantidade" name="quantidade">
+							<option>Selecione a quantidade</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</form>
+					<br/>
+					<form>
+						<fieldset>
+							<legend>Forma de Entrega:</legend>
+							<input id="del" type="radio" name="envio" value="del"> <label for="del">Delivery</label>
+							<br/>
+							<input id="ret" type="radio" name="envio" value="ret"> <label for="ret">Retirar no Local</label>
+						</fieldset>
+					</form>
+					<br/>
+					<form>
+						<label for="msg">Comentários e Observações:</label><br/>
+						<textarea id="msg" cols="52" rows="6"></textarea>
+					</form>
+					<br/>
+					<form>
+						<div id="botao">
+							<input type="submit" name="btn-enviar" value="Agendar" />
+							<input type="reset" name="btn-redefinir" value="Cancelar" />
+						</div>	
+					</form>
+					<br/><br/><br/><br/><br/>
+			</section>
+
+			<hr/>
+		
+
+		<footer>	
+			<p>Desenvolvido por: <a href="https://www.linkedin.com/in/magalhaes-silva-1a3602229/" target="_blank">Gabriel Magalhães</a> - 2022 (Todos os direitos reservados)</p>	
+		</footer>
+
+	</body>
 
 </html>
